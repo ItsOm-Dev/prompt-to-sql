@@ -2,6 +2,27 @@
 
 ## What It Does
 Takes natural language questions and converts them into SQL queries using Mistral LLM, then runs them on a local SQLite database.
+As for till 
+
+## Installing Ollama and Mistral (Local LLM Setup)
+
+This project uses the [Ollama](https://ollama.com) framework to run large language models like Mistral locally on your machine.
+
+### Step 1: Download and Install Ollama
+
+Visit the official Ollama website:
+
+[https://ollama.com/download](https://ollama.com/download)
+
+Choose the version for your operating system (Windows, macOS, or Linux) and follow the installation instructions.
+
+### Step 2: Verify Installation
+
+After installation, open a terminal and run:
+
+```bash
+ollama --version
+
 
 ## How to Run
 
@@ -21,8 +42,8 @@ python app.py
 ```
 
 ##  Example
-**Input:** "Show all users who signed up in the last 7 days"  
-**Output SQL:** `SELECT * FROM users WHERE signup_date >= DATE('now', '-7 day');`
+**Input:** "show data/info"  
+**Output SQL:** `SELECT * FROM users;`
 
 ## Tech Stack
 - Python
@@ -30,6 +51,7 @@ python app.py
 - Ollama (Mistral model)
 
 ## Future Features
-- Web UI with Flask
+- Desktop UI using tkinter
+- Web UI with Flask,django(for scaling)
 - Export results to CSV
 - Use AI to explain SQL queries

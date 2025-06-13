@@ -1,0 +1,4 @@
+# Ensure text files use LF line endings in the repository
+*.py text eol=lf
+*.sql text eol=lf
+*.md text eol=lf

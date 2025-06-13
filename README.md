@@ -1,8 +1,8 @@
 # Prompt-to-SQL Assistant (Powered by Mistral via Ollama)
 
 ## What It Does
-Takes natural language questions and converts them into SQL queries using Mistral LLM, then runs them on a local SQLite database.
-As for till 
+Takes natural language questions and converts them into SQL queries using Mistral LLM, then runs them on a local SQLite database.It translates natural language prompts into executable SQL queries using the Mistral large language model via Ollama. The tool then executes these queries on a local SQLite database and displays the results in real time.
+This project demonstrates how to integrate local LLMs with traditional databases, making it a fully offline, privacy-respecting data query assistant.
 
 ## Installing Ollama and Mistral (Local LLM Setup)
 
